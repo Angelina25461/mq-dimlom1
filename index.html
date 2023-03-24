@@ -240,9 +240,8 @@
 			      <input class="field" name="query" placeholder="Найти..." required>
 			      <span class="visually_hidden">Поле ввода</span>
 			    </label>
-			    <button class="button" alt="Лупа">
-			    	<span class="visually_hidden">Кнопка поиска</span>
-			    </button>
+			    <span class="visually_hidden">Кнопка поиска</span>
+			    <button class="button" alt="Лупа"></button>
 			 	</form>
 			</section>
 			 <section class="distribution">
@@ -364,7 +363,7 @@
 			</article>
 		</div>
 	</section>
-	   <div class="blackout">
+	   <div class="blackout _hidden">
 		<div class="popup">
 			<div class="popup_block">
 			  <h3 class="popup_title">Ваш фитбек</h3> 
@@ -377,20 +376,22 @@
 			    </div>
 			    <div class="form-email">
 			      <span class="checkbox_text">Вы подписаны на e-mail рассылку?</span>
-			      <div class="radio_input">
-				      <label for="yes" class="radio_group_text_1">
-				      <input type="radio" class="radio_group" name="email" checked>
-				      Да
-				      </label>
-				      <label for="no" class="radio_group_text_2">
-				      <input type="radio" class="radio_group" name="email">
-				      Нет
-				      </label>
-				   </div>
+				     <div class="radio_input">
+				      	<label class="check_text">
+				      		<input type="radio" class="radio_group" name="subscription" checked>
+				      		<span class="check_style"></span>
+				      	   Да
+				         </label>
+				         <label class="check_text">
+				      		<input type="radio" class="radio_group" name="subscription">
+				      		<span class="check_style"></span>
+				      	   Нет
+				         </label>
+					   </div>
 			    </div>
 			    <div class="information">
 			    	 <label class="information_label" for="text">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label> 
-			    	 <input class="wishes" type="text" placeholder="Может, больше рецептов?" required>
+			    	 <textarea class="wishes" placeholder="Может, больше рецептов?"></textarea>
 				 </div>
 			   </form>
 			   <button class="submit_form" type="submit">Отправить</button>
